@@ -6,7 +6,6 @@ import 'package:intl/intl.dart';
 import '../../../data/enums/filter_date_enum.dart';
 
 class GraphMetricsController extends GetxController {
-  //TODO: Implement GraphMetricsController
   List<OrderModel> orders = [];
   final count = 0.obs;
   Rx<FilterDateEnum> filterDate = FilterDateEnum.month.obs;
@@ -70,7 +69,7 @@ class GraphMetricsController extends GetxController {
     graphData.sort((a, b) {
       DateTime dateA = DateFormat('yyyy-MM').parse(a.name);
       DateTime dateB = DateFormat('yyyy-MM').parse(b.name);
-      return dateA.compareTo(dateB); // Ascending order
+      return dateA.compareTo(dateB); 
     });
   }
 

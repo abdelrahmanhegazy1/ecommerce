@@ -5,7 +5,6 @@ import 'package:get/get.dart';
 import '../../../routes/app_pages.dart';
 
 class NumericMetricsController extends GetxController with StateMixin<List<OrderModel>>{
-  //TODO: Implement NumericMetricsController
 
   RxList<OrderModel> orders = <OrderModel>[].obs;
   OrdersProvider ordersProvider = Get.find<OrdersProvider>();
